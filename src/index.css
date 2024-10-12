@@ -48,6 +48,34 @@ h1 {
   left: 0;
   z-index: -1;
 }
+.app .search {
+  text-align: center;
+  padding: 1rem;
+}
+.app input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px 5px 5px 25px;
+  border: 1px solid rgba(32, 103, 178, 1);
+  background: rgba(110, 168, 231, 0.5);
+  color: #ffff;
+}
+.app input:focus {
+  outline: none;
+}
+.app button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px 25px 25px 5px;
+  font-size: 1.2rem;
+  border: 1px solid rgba(32, 103, 178, 1);
+  background: rgba(110, 168, 231, 0.5);
+  color: #ffff;
+}
+.app button:hover {
+  cursor: pointer;
+  background: rgb(38, 120, 207);
+  transition: 0.7s;
+}
 .container {
   max-width: 700px;
   height: 700px;
