@@ -39,11 +39,15 @@ const WeatherComponent = () => {
                 <div>
                     <div className='forecast'>
                         <ul>
-                            {forecastData.list && forecastData.list.map((forecast, index) => (
+                            {forecastData.list && forecastData.list.slice(0,5).map((forecast, index) => (
                                 <li className='bottom' key={index}>
                                     <div className='date'>
                                         <p className="bold">{formatDay(forecast.dt * 1000)}</p>
                                         <p className="date">{formatDate(forecast.dt * 1000)}</p>
+                                    </div>
+                                    <div className='date'>
+                                        <p className="bold">Čas</p>
+                                        <p className="date">{formatTime(forecast.dt * 1000)}</p>
                                     </div>
                                     <div className='forecast-temp'>
                                         <p className='bold'>{forecast.main.temp.toFixed()}°C</p>

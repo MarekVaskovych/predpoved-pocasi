@@ -61,7 +61,7 @@ h1 {
   color: #ffff;
 }
 .app input:focus {
-  outline: none;
+  outline: 1px solid rgb(38, 120, 207);
 }
 .app button {
   padding: 0.7rem 1.5rem;
@@ -100,6 +100,9 @@ h1 {
   padding: 1rem;
   background-color: #77a6d8;
   border-radius: 0.7rem;
+}
+.app .bottom:hover {
+  background-color: #5684b5;
 }
 .bold {
   font-weight: bold;
