@@ -74,7 +74,7 @@ h1 {
 .app button:hover {
   cursor: pointer;
   background: rgb(38, 120, 207);
-  transition: 0.7s;
+  transition: 1s;
 }
 .container {
   max-width: 700px;
@@ -82,7 +82,7 @@ h1 {
   margin: auto;
   padding: 0 1rem;
   position: relative;
-  top: 10%;
+  top: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,4 +103,7 @@ h1 {
 }
 .bold {
   font-weight: bold;
+}
+.date {
+  font-size: 1.2rem;
 }
