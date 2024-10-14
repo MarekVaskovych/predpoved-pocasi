@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
 }
-
+/*Základní styly */
 body {
   margin: 0;
   font-family: "Outfit", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
@@ -28,20 +28,25 @@ h2 {
 
 p {
   font-size: 1.5rem;
-  
 }
 
 h1 {
   font-size: 6rem;
   color: rgb(60, 90, 116);
-
 }
 .app {
   width: 100%;
   height: 100vh;
   position: relative;
 }
-
+.app .description {
+  color: rgb(60, 90, 116);
+  position: relative;
+  right: -2%;
+  
+  
+}
+/*Ostylování pozadí*/
 .app:before {
   content: "";
   background: url("./assets/background.jpg") no-repeat center center/cover;
@@ -52,6 +57,7 @@ h1 {
   left: 0;
   z-index: -1;
 }
+/*Styly k vyhledánači*/
 .app .search {
   text-align: center;
   padding: 1rem;
@@ -73,13 +79,15 @@ h1 {
   font-size: 1.2rem;
   border: 1px solid rgb(60, 90, 116);
   background: rgb(60, 90, 116);
-  color: #ffff;
+  color: #bac3c6;
 }
 .app button:hover {
   cursor: pointer;
   background: #3b93a9;
+  color: #ffff;
   transition: 2s;
 }
+/*Styl k dnešní předpovědi*/
 .container {
   max-width: 700px;
   height: 700px;
@@ -98,6 +106,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
+/*Styly k předpovědi na následujících 5 dnů */
 .app .bottom {
   display: flex;
   justify-content: space-evenly;
@@ -106,13 +115,22 @@ h1 {
   margin: 1rem auto;
   padding: 1rem;
   background-color: #3b93a9;
-  opacity:0.85;
+  opacity: 0.85;
   border-radius: 0.7rem;
 }
 .app .bottom:hover {
-  background-color: #3b93a9;
-  opacity: 1;
+  background: rgb(112, 178, 198);
+  background: linear-gradient(
+    307deg,
+    rgba(112, 178, 198, 1) 0%,
+    rgba(112, 178, 198, 1) 22%,
+    rgba(59, 149, 177, 1) 43%,
+    rgba(31, 127, 157, 1) 85%
+  );
+  transition: 2s;
+  cursor: pointer;
 }
+/* Detaily*/
 .bold {
   font-weight: bold;
 }

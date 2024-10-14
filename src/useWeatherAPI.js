@@ -1,13 +1,15 @@
+
 import { useState, useEffect } from 'react';
 import { fetch } from 'cross-fetch';
 
 const useWeatherAPI = (apiKey) => {
+    /*use States*/
     const [weatherData, setWeatherData] = useState({});
     const [forecastData, setForecastData] = useState({});
     const [city, setCity] = useState('Olomouc');
     const [searchCity, setSearchCity] = useState('');
 
-
+    /*use Effects*/
     useEffect(() => {
         const fetchWeatherData = async () => {
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -17,7 +19,7 @@ const useWeatherAPI = (apiKey) => {
         };
 
         const fetchForecastData = async () => {
-            const url =`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+            const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
             const response = await fetch(url);
             const data = await response.json();
             setForecastData(data);
@@ -26,7 +28,8 @@ const useWeatherAPI = (apiKey) => {
         fetchWeatherData();
         fetchForecastData();
     }, [city, apiKey]);
-
+    
+    /* handle Search*/
     const handleSearchCity = (event) => {
         setSearchCity(event.target.value);
     };
