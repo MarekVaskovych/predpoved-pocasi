@@ -1,7 +1,7 @@
 # Předpověď počasí
 #### Aplikace, která ukazuje předpověď počasí na 5 dní dopředu, ve městech dle volby uživatele 🌞☁️ 
 ## Spuštění aplikace
-- Aplikace se spustí po kliknutí na odkaz
+- Aplikace se spustí po kliknutí na odkaz [https://apiweatherforecast.netlify.app]
 - Aplikace čte data z REST API z Open Weather Map
 - Napište do vyhledávače název města, a program zobrazí aktuální předpověď a také předpověď na následujících 5 dní
 - Aplikace reaguje na změnu města zobrazením příslušné předpovědi
@@ -15,6 +15,7 @@
 ### Pro doplnění
 - aplikace je plně funkčí a přehledná
 - jediné co aplikaci chybí, je našeptávač ve vyhledávači
+- Původně byla aplikace v češtině ale kvůli jazyku dat z API jsem musel jazyk změnit
 
 # Getting Started with Create React App
 
