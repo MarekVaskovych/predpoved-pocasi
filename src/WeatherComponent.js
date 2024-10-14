@@ -22,8 +22,8 @@ const WeatherComponent = () => {
         /*JSX šablona pro stránku*/
         <div className="app">
             <div className="search">
-                <input type="text" value={searchCity} onChange={handleSearchCity} placeholder="Zadejte město"></input>
-                <button onClick={handleSearch}>Hledej!</button>
+                <input type="text" value={searchCity} onChange={handleSearchCity} placeholder="Search your city..."></input>
+                <button onClick={handleSearch}>Search!</button>
             </div>
             
             <div className='container'>
