@@ -1,7 +1,8 @@
 # Předpověď počasí
 #### Aplikace, která ukazuje předpověď počasí na 5 dní dopředu, ve městech dle volby uživatele 🌞☁️ 
 ## Spuštění aplikace
-- Aplikace se spustí po kliknutí na odkaz 
+- Aplikace se spustí po kliknutí na odkaz
+- Aplikace čte data z REST API z Open Weather Map
 - Napište do vyhledávače název města, a program zobrazí aktuální předpověď a také předpověď na následujících 5 dní
 - Aplikace reaguje na změnu města zobrazením příslušné předpovědi
 - Aplikace podporují prohlížeče Mozzila Firefox (nejnovější verze)
