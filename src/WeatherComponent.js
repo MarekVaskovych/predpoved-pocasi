@@ -9,13 +9,13 @@ const WeatherComponent = () => {
     const formatDay = (day) => {
         return moment(day).format('dddd');
     }
-
     const formatDate = (date) => {
         return moment(date).format('DD.MM.YY');
     }
     const formatTime = (time) => {
         return moment(time).format('HH:MM');
     }
+
 
     return (
         <div className="app">
@@ -25,22 +25,25 @@ const WeatherComponent = () => {
             </div>
 
             <div className='container'>
-                <div className='header'>
-                    <div className='location'>
-                        <h2>{weatherData.name}</h2>
-                    </div>
-                    <div className='temp'>
-                        <h1>{weatherData.main && weatherData.main.temp.toFixed()}°C</h1>
-                    </div>
-                    <div className='description'>
-                        <p>{weatherData.weather && weatherData.weather[0].main}</p>
+                <div className="top">
+                    <div className='header'>
+                        <div className='location'>
+                            <h2>{weatherData.name}</h2>
+                        </div>
+                        <div className='temp'>
+                            <h1>{weatherData.main && weatherData.main.temp.toFixed()}°C</h1>
+                        </div>
+                        <div className='description'>
+                            <p>{weatherData.weather && weatherData.weather[0].main}</p>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <div className='forecast'>
                         <ul>
-                            {forecastData.list && forecastData.list.slice(0,5).map((forecast, index) => (
-                                <li className='bottom' key={index}>
+                            {forecastData.list && forecastData.list.slice(1, 36).filter((forecast, index) => (index + 1) % 7 === 0).map((forecast) => (
+
+                                <li className='bottom' key={forecast.dt}>
                                     <div className='date'>
                                         <p className="bold">{formatDay(forecast.dt * 1000)}</p>
                                         <p className="date">{formatDate(forecast.dt * 1000)}</p>
@@ -66,7 +69,7 @@ const WeatherComponent = () => {
                                         <p>Pocitová</p>
                                     </div>
                                 </li>
-                            ))};
+                            ))}
 
                         </ul>
                     </div>
