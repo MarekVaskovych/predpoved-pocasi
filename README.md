@@ -1,3 +1,20 @@
+# Předpověď počasí
+#### Aplikace, která ukazuje předpověď počasí na 5 dní dopředu, ve městech dle volby uživatele 🌞☁️ 
+## Spuštění aplikace
+- Aplikace se spustí po kliknutí na odkaz 
+- Napište do vyhledávače název města, a program zobrazí aktuální předpověď a také předpověď na následujících 5 dní
+- Aplikace reaguje na změnu města zobrazením příslušné předpovědi
+- Aplikace podporují prohlížeče Mozzila Firefox (nejnovější verze)
+## Struktura aplikace
+- aplikaci jsem vytvořil pomocí node.js ve VS Code
+- Pro vývoj jsem použil funkcionální způsob
+- use Case's jsou jsou odděleny od aplikace componenty v useWeatherAPI 
+- v hlavní komponentě je umístěna JSX šablona a konstanty formátující čas a datum pomocí knihovny moment
+- Aplikace se spouští v App.js
+### Pro doplnění
+- aplikace je plně funkčí a přehledná
+- jediné co aplikaci chybí, je našeptávač ve vyhledávači
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
